@@ -24,8 +24,8 @@
   "spec": "QA", 
   "ex": "1", 
   "current_user": {
-     "uid": YOUR_ID,   //1
-     "uip": "YOUR_IP"  //"5.152.62.104"
+     "uid": YOUR_ID,   
+     "uip": "YOUR_IP"  
    }
 }
 ```
