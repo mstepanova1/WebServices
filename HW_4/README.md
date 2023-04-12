@@ -28,7 +28,7 @@ I. View lists:
   - *Method: GET  
      Endpoint: WS_1/get_departments -->  
 	   Method: GET  
-     Endpoint: WS_4/get_departments_list*   
+     Endpoint: WS_5/get_departments_list*   
 	  
 II. Create job:
 
