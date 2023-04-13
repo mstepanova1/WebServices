@@ -98,3 +98,31 @@ Body raw (JSON):
 ```
 
 3. You can find logs on server in w1.log
+
+### SOLUTION
+
+1. Check all endpoints
+
+2. Log onto the server:   
+`ssh test_31@23.88.52.139`
+
+3. Find files `w1.log`, `w2.log`, `w3.log`, `w4.log`, `w5.log`:   
+`find -name "w?.log"`
+
+4. Download them to computer:
+```
+exit
+scp test_31@23.88.52.139:/usr/t4_ws/t4/w1/w1.log w1.log
+scp test_31@23.88.52.139:/usr/t4_ws/t4/w2/w2.log w2.log
+scp test_31@23.88.52.139:/usr/t4_ws/t4/w3/w3.log w3.log
+scp test_31@23.88.52.139:/usr/t4_ws/t4/w4/w4.log w4.log
+scp test_31@23.88.52.139:/usr/t4_ws/t4/w5/w5.log w5.log
+```
+
+5. Output to the `logs.log` file only those requests with my IP and 10 lines around it:
+`grep -a -C10 "0.0.0.0" w?.log >logs.log`
+
+6. Open `logs.log` file:
+`vim logs.log`
+
+7. There are no errors in the logs
