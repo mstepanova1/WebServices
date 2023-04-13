@@ -8,32 +8,32 @@
 **WS_4:** http://23.88.52.139:5044 (position list)  
 **WS_5:** http://23.88.52.139:5045 (list of departments)
 
-I. View lists:  
+1. View lists:  
 
-  - *Method: GET    
-     Endpoint: WS_1/all_jobs -->  
-	   Method: GET  
-     Endpoint: WS_2/get_all_jobs*  
+- |               | Method        | Endpoint          |
+  |:------------- |:------------- |:----------------  |
+  |  1            | GET           | WS_1/all_jobs     |
+  |  2            | GET           | WS_2/get_all_jobs |
+
+- |               | Method        | Endpoint                  |
+  |:------------- |:------------- |:------------------------  |
+  |  1            | GET           | WS_1/get_skills           |
+  |  2            | GET           | WS_3/get_tech_skills_list |
+  
+- |               | Method        | Endpoint                |
+  |:------------- |:------------- |:----------------------  |
+  |  1            | GET           | WS_1/get_positions      |
+  |  2            | GET           | WS_4/get_positions_list |     
      
-  - *Method: GET  
-     Endpoint: WS_1/get_skills -->  
-	   Method: GET   
-     Endpoint: WS_3/get_tech_skills_list*  
-     
-  - *Method: GET  
-     Endpoint: WS_1/get_positions -->   
-	   Method: GET   
-     Endpoint: WS_4/get_positions_list*  
-     
-  - *Method: GET  
-     Endpoint: WS_1/get_departments -->  
-	   Method: GET  
-     Endpoint: WS_5/get_departments_list*   
-	  
-II. Create job:
+- |               | Method        | Endpoint                  |
+  |:------------- |:------------- |:------------------------  |
+  |  1            | GET           | WS_1/get_departments      |
+  |  2            | GET           | WS_5/get_departments_list |       
+  	  
+2. Create job:
 
   - *Method: POST  
-     Endpoint: WS_1/create_job* -->   
+     Endpoint: WS_1/create_job*    
      
   Body raw (JSON): 
 ```  
@@ -49,7 +49,7 @@ II. Create job:
      }
 ```
   - *Method: POST  
-     Endpoint: WS_2/create_job_position* -->   
+     Endpoint: WS_2/create_job_position*    
      
 Body raw (JSON):   
 ```
@@ -65,7 +65,7 @@ Body raw (JSON):
      }
 ```
  - *Method: POST  
-   Endpoint: WS_3/skill_config* -->   
+   Endpoint: WS_3/skill_config*    
      
   Body raw (JSON): 
 ```  
@@ -79,7 +79,7 @@ Body raw (JSON):
      }
 ```
  - *Method: POST  
-   Endpoint: WS_4/position_config* -->   
+   Endpoint: WS_4/position_config*    
      
   Body raw (JSON): 
 ```  
@@ -88,7 +88,7 @@ Body raw (JSON):
      }
 ```
  - *Method: POST  
-    Endpoint: WS_5/department_config* -->   
+    Endpoint: WS_5/department_config*    
      
   Body raw (JSON): 
 ```  
@@ -97,4 +97,4 @@ Body raw (JSON):
      }
 ```
 
-III. You can find logs on server in w1.log
+3. You can find logs on server in w1.log
